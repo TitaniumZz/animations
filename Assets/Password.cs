@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Password : MonoBehaviour
@@ -7,8 +8,8 @@ public class Password : MonoBehaviour
     [SerializeField] private GameObject passBox;
     private bool opened;
     private bool passBoxActive;
-
     private void Update()
+     
     {
         if (Input.GetKeyDown(KeyCode.E))
         {

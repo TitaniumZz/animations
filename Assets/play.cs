@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Play : MonoBehaviour
 {
+    public int sahne;
     public void mistake1()
     {
         SceneManager.LoadSceneAsync(2);
@@ -21,5 +22,13 @@ public class Play : MonoBehaviour
     public void quitgame()
     {
         Application.Quit();
+    }
+    public void ileri()
+    {
+        SceneManager.LoadSceneAsync(2);
+    }
+    public void SuSavaþý()
+    {
+        SceneManager.LoadScene(sahne);
     }
 }

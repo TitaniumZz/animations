@@ -5,12 +5,14 @@ using UnityEngine.SceneManagement;
 
 public class Succeed : MonoBehaviour
 {
+    public GameObject SucceedCanvas;
     // Start is called before the first frame update
     private void OnTriggerEnter2D (Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene(3);
+            Time.timeScale = 0f;
+            SucceedCanvas.SetActive(true);  
         }
     }
 }

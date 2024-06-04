@@ -4,9 +4,13 @@ using System.Collections;
 public class PlayerController : MonoBehaviour
 {
     public Canvas infoCanvas; // Canvas bileþeni için bir referans
+    public Canvas info;
     private bool canDestroyKnife = false;
     private bool knifeDestroyed = false;
     private GameObject interactableObject;
+    public AudioSource Pat;
+    public AudioSource Ahhað;
+    public GameObject Pasta;
 
     void Start()
     {
@@ -24,7 +28,17 @@ public class PlayerController : MonoBehaviour
         }
         else if (knifeDestroyed && interactableObject != null && interactableObject.CompareTag("Balloon") && Input.GetKeyDown(KeyCode.E))
         {
+            Destroy(interactableObject);   
+            Pat.Play();
+
+        }
+        else if (knifeDestroyed && interactableObject != null && interactableObject.CompareTag("Balloon2") && Input.GetKeyDown(KeyCode.E))
+        {
             Destroy(interactableObject);
+            Pasta.SetActive(true);
+            Ahhað.Play();
+            StartCoroutine(ShowCanvas2());
+            
         }
     }
 
@@ -39,6 +53,11 @@ public class PlayerController : MonoBehaviour
         {
             interactableObject = other.gameObject;
         }
+        else if (knifeDestroyed && other.CompareTag("Balloon2"))
+        {
+            interactableObject = other.gameObject;
+        }
+
     }
 
     void OnTriggerExit2D(Collider2D other)
@@ -55,5 +74,12 @@ public class PlayerController : MonoBehaviour
         infoCanvas.gameObject.SetActive(true); // Canvas'ý etkinleþtir
         yield return new WaitForSeconds(2); // 2 saniye bekle
         infoCanvas.gameObject.SetActive(false); // Canvas'ý devre dýþý býrak
+    }
+
+    IEnumerator ShowCanvas2()
+    {
+        info.gameObject.SetActive(true); // Canvas'ý etkinleþtir
+        yield return new WaitForSeconds(2); // 2 saniye bekle
+        info.gameObject.SetActive(false); // Canvas'ý devre dýþý býrak
     }
 }

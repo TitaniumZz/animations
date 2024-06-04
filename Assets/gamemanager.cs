@@ -21,6 +21,7 @@ public class gamemanager : MonoBehaviour
     public void GameOver()
     {
         _GameOverCanvas.SetActive(true);
+       
 
         Time.timeScale = 0f;
     }
