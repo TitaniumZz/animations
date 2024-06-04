@@ -9,10 +9,10 @@ EditorBuildSettings:
     path: Assets/Scenes/mainnmap.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Scenes/mistake1.unity
+    path: "Assets/Scenes/\xC7ocukluk.unity"
     guid: c415921033c7fb94186a0e5a8bbd2cbf
   - enabled: 1
-    path: Assets/Scenes/mistake2.unity
+    path: Assets/Scenes/Lise.unity
     guid: 6913808380d1a07479b263a8729e0079
   - enabled: 1
     path: Assets/Scenes/mistake3.unity
