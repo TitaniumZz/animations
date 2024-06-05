@@ -4027,7 +4027,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 432d814b94c5ce64a897f1dbe5e5fc43, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  "MumYak\u0131ld\u0131": {fileID: 1670264916}
+  "MumYak\xFDld\xFD": {fileID: 0}
 --- !u!4 &880700858
 Transform:
   m_ObjectHideFlags: 0
@@ -6427,7 +6427,7 @@ MonoBehaviour:
   infoCanvas: {fileID: 1574419185}
   info: {fileID: 2066441613}
   Pat: {fileID: 387448336}
-  "Ahha\u011F": {fileID: 1310849388}
+  "Ahha\xF0": {fileID: 0}
   Pasta: {fileID: 534464318}
 --- !u!1 &1512488530
 GameObject:
