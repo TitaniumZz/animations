@@ -407,7 +407,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e83d83068c4c1714e979e2eb36892af2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextStage: mistake2
+  nextStage: "Do\u011Fum G\xFCn\xFC Balon"
 --- !u!1 &56469930
 GameObject:
   m_ObjectHideFlags: 0
